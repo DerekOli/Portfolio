@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  
+  <!-- Meta Description & Author -->
+  <meta name="description" content="Frequently asked questions about the Playstation 1 in a question and answer format">
+  <meta name="author" content="Derek Olive">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/ps1-style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Images/ps1-icon.png">
+</head>
+  
+<!-- Styling for text and layout structure-->
+  <style>
+    .faq-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .faq-item {
+      display: flex;
+      background-color: rgba(0,0,0,0.6);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0,173,238,0.5);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .faq-item:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 25px rgba(0,173,238,0.8);
+    }
+
+    .question {
+      width: 40%;
+      font-size: 1.5em;
+      color: #00adee;
+      font-weight: bold;
+      text-shadow: 0 0 8px #00adee;
+      padding-right: 20px;
+      border-right: 2px solid rgba(0,173,238,0.5);
+    }
+
+    .answer {
+      width: 60%;
+      font-size: 1.2em;
+      color: #fff;
+      line-height: 1.5em;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+      padding-left: 20px;
+    }
+
+    @media (max-width: 700px) {
+      .faq-item {
+        flex-direction: column;
+      }
+      .question, .answer {
+        width: 100%;
+        border: none;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- NAVIGATION LINKS DO NOT TOUCH -->
+  <nav>
+  <a href="home.html">
+    <img src="Images/ps1-banner.png" alt="PS1 Banner" class="nav-banner">
+  </a>
+    <a href="home.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="games.html">Games</a>
+    <a href="buyitnow.html">Buy It Now</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+<div class="faq-container">
+
+<!-- faq-container class 1 -->
+  <div class="faq-item">
+    <div class="question">How many <span class="highlight">memory cards</span> do I need?</div>
+    <div class="answer">Most games save progress using a single <span class="highlight">memory card</span>, but it’s recommended to have at least <span class="highlight">two</span> for maximum storage.</div>
+  </div>
+
+<!-- faq-container class 2 -->
+  <div class="faq-item">
+    <div class="question">Do <span class="highlight">PS1 games</span> support multiplayer?</div>
+    <div class="answer">Yes! Many <span class="highlight">games</span> support two players via the controller ports, and some use the <span class="highlight">Multitap</span> accessory for up to four players.</div>
+  </div>
+
+<!-- faq-container class 3 -->
+  <div class="faq-item">
+    <div class="question">Can I use my <span class="highlight">music CDs</span> in the playstation?</div>
+    <div class="answer">Yes! The <span class="highlight">PS1</span> can play standard <span class="highlight">audio CDs</span>, letting you enjoy your favorite music.</div>
+  </div>
+
+<!-- faq-container class 4 -->
+  <div class="faq-item">
+    <div class="question">Are <span class="highlight">DualShock controllers</span> necessary?</div>
+    <div class="answer">Not strictly, but they provide <span class="highlight">vibration feedback</span> and <span class="highlight">analog controls</span> for a more immersive experience. On the rare occasion a game does <span class="highlight">require</span> the use of a dualshock controller These games will be labeled as such on the box art. For a full list, see the 
+		<a href="https://consolemods.org/wiki/PS1:List_of_Games_with_Analog_Support" target="_blank" class="neon-link">PS1 Analog Support List</a>.
+	</div>
+  </div>
+
+<!-- faq-container class 5 -->
+  <div class="faq-item">
+  <div class="question">What <span class="highlight">display options</span> are available?</div>
+  <div class="answer">
+    The <span class="highlight">PS1</span> outputs standard <span class="highlight">composite video</span>, <span class="highlight">S-Video</span>, or <span class="highlight">component video</span>. 
+    For an in-depth technical breakdown of PS1 video output options, check out the 
+    <a href="https://retrorgb.com/playstation1.html" target="blank" class="neon-link">RetroRGB PS1 Blog</a>.
+  </div>
+</div>
+
+
+<div class="storage-info">
+  <h2>PS1 vs <span class="highlight">N64 Storage Capacity</span></h2>
+<p>
+  While <span class="highlight">Nintendo 64</span> cartridges can <span class="highlight">ONLY</span> hold up to <span class="highlight">64 MB</span>, a single <span class="highlight-blue">PlayStation 1</span> disc 
+  can store up to <span class="highlight-blue">700 MB</span> of data; over <span class="highlight-blue">ten times more</span>! This extra space allows for 
+  <span class="highlight-blue">full-motion video</span>, <span class="highlight-blue">CD-quality music</span>, and larger <span class="highlight-blue">3D environments</span>.
+</p>
+
+  <div class="disc-image">
+    <img src="Images/ps1discvsn64cart.png" alt="PS1 Disc">
+  </div>
+</div>
+</div>
+</body>
+
+<!-- Footer information with email link with class to make it white instead of dark blue since my bg makes it blend in -->
+<footer>
+  <a href="https://sonyinteractive.com/en/" target="_blank">
+    © 1995 Sony Computer Entertainment Inc.</a>
+  Created by <a href="mailto:olive07@email.franklin.edu" class="mail-link">Derek Olive</a>
+  <a href="sitemap.html">Sitemap</a>
+</footer>

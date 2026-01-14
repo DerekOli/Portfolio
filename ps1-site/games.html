@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  
+  <!-- Meta Description & Author -->
+  <meta name="description" content="The top Playstation 1 games with short videos and descriptions of each.">
+  <meta name="author" content="Derek Olive">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/ps1-style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Images/ps1-icon.png">
+</head>
+
+<!-- Game styling and layout with 4:3 display for GIFs -->
+  <style>
+    .game {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin: 30px auto;
+      max-width: 900px;
+      background-color: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,173,238,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .game:hover {
+      transform: scale(1.02);
+    }
+
+    .game img {
+      width: 250px;
+      aspect-ratio: 4/3;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,173,238,0.7);
+      object-fit: cover;
+    }
+
+    .game p {
+      font-size: 1.2em;
+      line-height: 1.5em;
+      color: #fff;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+      flex: 1;
+    }
+
+    .game-title {
+      color: #00adee;
+      text-shadow: 0 0 10px #00adee;
+    }
+
+    .game-title:hover {
+      text-shadow: 0 0 20px #00adee, 0 0 40px #00adee;
+      transition: text-shadow 0.3s ease;
+    }
+
+    h3 {
+      margin-left: 30px;
+      color: #00adee;
+      text-shadow: 0 0 10px #00adee;
+    }
+
+    ul {
+      margin-left: 50px;
+      list-style-type: square;
+      color: #fff;
+    }
+
+    /* Optional: smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+<!-- NAVIGATION LINKS DO NOT TOUCH -->
+  <nav>
+  <a href="home.html">
+    <img src="Images/ps1-banner.png" alt="PS1 Banner" class="nav-banner">
+  </a>
+    <a href="home.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="games.html">Games</a>
+    <a href="buyitnow.html">Buy It Now</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+<!-- games Title -->
+<h1 class="games-title">Top 5 Bestselling Games</h1>
+
+
+  <!-- game class 1 -->
+  <div class="game">
+    <img src="Videos/crashbandicoot.gif" alt="Crash Bandicoot gameplay">
+    <p><span class="game-title"><strong><a href="https://www.ign.com/games/crash-bandicoot/ps1" target="_blank">Crash Bandicoot</a></strong></span>
+ : A fast-paced platforming adventure with beautiful graphics as you travel across three unique islands. <span class="highlight">$29.99</span></p>
+  </div>
+
+  <!-- game class 2 -->
+  <div class="game">
+    <img src="Videos/spyrothedragon.gif" alt="Spyro the Dragon gameplay">
+    <p><span class="game-title"><strong><a href="https://www.mobygames.com/game/spyro-the-dragon" target="_blank">Spyro the Dragon</a></strong></span> 
+ : Explore colorful worlds with a fiery attitude and help from a dragonfly called sparx. <span class="highlight">$29.99</span></p>
+  </div>
+
+  <!-- game class 3 -->
+  <div class="game">
+    <img src="Videos/metalgearsolid.gif" alt="Metal Gear Solid gameplay">
+    <p><span class="game-title"><strong><a href="https://metalgear.fandom.com/wiki/Metal_Gear_Solid" target="_blank">Metal Gear Solid</a></strong></span> 
+ : Tactical espionage and cinematic storytelling at its finest, Join snake in this stealth adventure. <span class="highlight">$39.99</span></p>
+  </div>
+
+  <!-- game class 4 -->
+  <div class="game">
+    <img src="Videos/tombraider.gif" alt="Tomb Raider gameplay">
+    <p><span class="game-title"><strong><a href="https://tombraider.fandom.com/wiki/Tomb_Raider_(1996)" target="_blank">Tomb Raider</a></strong></span> 
+ : Discover ancient tombs with Lara Croft on her iconic treasure-hunting adventures. <span class="highlight">$24.99</span></p>
+  </div>
+
+  <!-- game class 5 -->
+  <div class="game">
+    <img src="Videos/crashteamracing.gif" alt="Crash Team Racing gameplay">
+    <p><span class="game-title"><strong><a href="https://www.gamespot.com/games/crash-team-racing/" target="_blank">Crash Team Racing</a></strong></span> 
+ : A legendary kart racer with some of the most impressive graphics ever seen on the PlayStation 1. <span class="highlight">$39.99</span></p>
+  </div>
+
+<!-- Bottom section -->
+<div class="bottom-section">
+  <h3 class="overlay-text">And over 500 other unique titles!</h3>
+  <img src="Images/ps1-games-collection.png" alt="Bonus Games" class="bottom-image">
+</div>
+
+</body>
+
+<!-- Footer information with email link with class to make it white instead of dark blue since my bg makes it blend in -->
+<footer>
+  <a href="https://sonyinteractive.com/en/" target="_blank">
+    © 1995 Sony Computer Entertainment Inc.</a>
+  Created by <a href="mailto:olive07@email.franklin.edu" class="mail-link">Derek Olive</a>
+  <a href="sitemap.html">Sitemap</a>
+</footer>

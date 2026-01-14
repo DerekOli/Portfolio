@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  
+  <!-- Meta Description & Author -->
+  <meta name="description" content="Showing the unique features of the PlayStation 1, including its dual memory card slots, CD laser technology, and controller.">
+  <meta name="author" content="Derek Olive">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/ps1-style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Images/ps1-icon.png">
+</head>
+
+<!-- Styling for text and layout structure-->
+  <style>
+    .feature {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 30px;
+      margin: 40px auto;
+      padding: 25px;
+      max-width: 900px;
+      background-color: rgba(0,0,0,0.6);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,173,238,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: scale(1.02);
+    }
+
+    .feature img {
+      width: 250px;
+      border-radius: 10px;
+      filter: drop-shadow(0 0 15px rgba(0,173,238,0.7));
+    }
+
+    .feature-text {
+      flex: 1;
+    }
+
+    .feature-text h2 {
+      font-size: 1.8em;
+      color: #00adee;
+      text-shadow: 0 0 10px #00adee;
+      margin-bottom: 10px;
+    }
+
+    .feature-text p {
+      font-size: 1.2em;
+      line-height: 1.5em;
+      color: #fff;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+    }
+
+  </style>
+</head>
+<body>
+<!-- NAVIGATION LINKS DO NOT TOUCH -->
+  <nav>
+  <a href="home.html">
+    <img src="Images/ps1-banner.png" alt="PS1 Banner" class="nav-banner">
+  </a>
+    <a href="home.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="games.html">Games</a>
+    <a href="buyitnow.html">Buy It Now</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+<!-- feature class 1 -->
+  <div class="feature">
+  <img src="Images/ps1-laser.png" alt="CD Laser">
+  <div class="feature-text">
+    <h2>Precision <span class="highlight">CD Laser</span></h2>
+    <p>
+      PlayStation 1's <span class="highlight">laser technology</span> reads 
+      <a href="https://www.britannica.com/technology/compact-disc/Analog-versus-digital-sound" target="_blank" class="neon-link">CD</a> 
+      discs with pinpoint accuracy, delivering smooth gameplay and pristine audio. It can also read your 
+      <a href="https://www.britannica.com/technology/compact-disc/Analog-versus-digital-sound" target="_blank" class="neon-link">CD</a> collection with support for full playback!
+    </p>
+  </div>
+</div>
+
+
+<!-- feature class 2 -->
+  <div class="feature">
+  <img src="Images/ps1-memorycardslots.png" alt="Memory Card Slots">
+  <div class="feature-text">
+    <h2>Dual <span class="highlight">Memory Card Slots</span></h2>
+    <p>
+      Never lose your progress! Save your adventures to 
+      <a href="https://consolemods.org/wiki/PS1:Memory_Cards" target="_blank" class="neon-link">memory cards</a> 
+      and easily switch between games without worry!
+    </p> 
+  </div>
+</div>
+
+
+<!-- feature class 3 -->
+  <div class="feature">
+    <img src="Images/ps1-controller.png" alt="PS1 controller">
+    <div class="feature-text">
+      <h2>Immersive <span class="highlight">Controllers</span></h2>
+      <p>Experience full control with the precision of <span class="highlight">PlayStation controllers</span>. Ergonomic design and responsive buttons bring your games to life like never before.</p>
+    </div>
+  </div>
+
+</body>
+
+<!-- Footer information with email link with class to make it white instead of dark blue since my bg makes it blend in -->
+<footer>
+  <a href="https://sonyinteractive.com/en/" target="_blank">
+    © 1995 Sony Computer Entertainment Inc.</a>
+  Created by <a href="mailto:olive07@email.franklin.edu" class="mail-link">Derek Olive</a>
+  <a href="sitemap.html">Sitemap</a>
+</footer>

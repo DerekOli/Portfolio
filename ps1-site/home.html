@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+
+  <!-- Meta Description & Author -->
+  <meta name="description" content="Welcome to the PlayStation 1 fan site, showcasing the console, top games, accessories, and other useful information as a Mock website from the 1990s.">
+  <meta name="author" content="Derek Olive">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/ps1-style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Images/ps1-icon.png">
+
+  <!-- jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- JavaScript to change the tagline text and style -->
+  <script>
+    $(document).ready(function() {
+      $(".tagline").text("Step into the world of 3D entertainment. Experience the power and performance of the next generation.");
+
+      // Styling
+      $(".tagline").css({
+		"color": "#ff9933",           // Orange color
+		"padding": "10px",
+		"border-radius": "5px",
+		"font-weight": "bold",
+		"text-align": "center",
+		"font-size": "1.4em",
+		});
+    });
+  </script>
+</head>
+
+<body>
+<!-- NAVIGATION LINKS DO NOT TOUCH -->
+  <nav>
+    <a href="home.html">
+      <img src="Images/ps1-banner.png" alt="PS1 Banner" class="nav-banner">
+    </a>
+    <a href="home.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="games.html">Games</a>
+    <a href="buyitnow.html">Buy It Now</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+  <div class="container">
+    <div class="hero">
+      <img src="Images/ps1-console.png" alt="PlayStation 1 Console">
+      <h1>THE FUTURE OF GAMING IS HERE</h1>
+    </div>
+
+    <!-- Tagline paragraph modified by jQuery -->
+    <p class="tagline">Step into the world of 3D entertainment. Experience the power and performance of the next generation.</p>
+
+    <a href="buyitnow.html" class="button">Order Now</a>
+  </div>
+
+  <!-- Ps1 logo before footer -->
+  <div class="logo-section">
+    <img src="Images/ps1-logo.png" alt="PlayStation Logo">
+  </div>
+</body>
+</html>
+  
+<!-- Footer information with email link with class to make it highlight blue instead of dark blue since my bg makes it blend in -->
+<footer>
+  <a href="https://sonyinteractive.com/en/" target="_blank">
+    © 1995 Sony Computer Entertainment Inc.</a>
+  Created by <a href="mailto:olive07@email.franklin.edu" class="mail-link">Derek Olive</a>
+  <a href="sitemap.html">Sitemap</a>
+</footer>

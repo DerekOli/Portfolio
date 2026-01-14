@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  
+  <!-- Meta Description & Author -->
+  <meta name="description" content="PlayStation 1 accessories such as the Namco Lightgun, Negcon controller, multitap, etc with short information on each item.">
+  <meta name="author" content="Derek Olive">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/ps1-style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Images/ps1-icon.png">
+</head>
+
+<!-- Styling for text and layout structure-->
+  <style>
+    .accessory-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .accessory-card {
+      background-color: rgba(0,0,0,0.7);
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,173,238,0.5);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .accessory-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(0,173,238,0.9);
+    }
+
+    .accessory-card img {
+      width: 180px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      filter: drop-shadow(0 0 15px rgba(0,173,238,0.6));
+    }
+
+    .accessory-card p {
+      font-size: 1.1em;
+      line-height: 1.4em;
+      color: #fff;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+    }
+
+    .accessory-card strong {
+      color: #00adee;
+      font-size: 1.2em;
+      display: block;
+      margin-bottom: 5px;
+      text-shadow: 0 0 10px #00adee;
+    }
+
+    .accessory-card em {
+      color: #d71920;
+      font-style: normal;
+      font-weight: bold;
+      display: block;
+      margin-top: 5px;
+    }
+
+    /* Responsive: switch to 2 columns on smaller screens */
+    @media (max-width: 900px) {
+      .accessory-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Responsive: single column on mobile */
+    @media (max-width: 500px) {
+      .accessory-container {
+        grid-template-columns: 1fr;
+      }
+      .accessory-card img {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- NAVIGATION LINKS DO NOT TOUCH -->
+  <nav>
+  <a href="home.html">
+    <img src="Images/ps1-banner.png" alt="PS1 Banner" class="nav-banner">
+  </a>
+    <a href="home.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="games.html">Games</a>
+    <a href="buyitnow.html">Buy It Now</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+  <div class="accessory-container">
+    <!-- Accessory 1 -->
+    <div class="accessory-card">
+      <img src="Images/ps1-memorycard.png" alt="Memory Card">
+      <p><strong>Memory Card</strong> Save your game progress with 15 blocks of space. <span class="highlight"><em>$9.99</em></span></p>
+    </div>
+
+    <!-- Accessory 2 -->
+    <div class="accessory-card">
+      <img src="Images/ps1-dualshockcontroller.png" alt="DualShock Controller">
+      <p><strong>DualShock Controller</strong> Experience immersive vibration feedback with cutting edge analog sticks. <span class="highlight"><em>$19.99</em></span></p>
+    </div>
+
+    <!-- Accessory 3 -->
+    <div class="accessory-card">
+      <img src="Images/ps1-multitap.png" alt="Multitap">
+      <p><strong>Multitap</strong> Connect up to four players for fun multiplayer action. <span class="highlight"><em>$24.99</em></span></p>
+    </div>
+
+    <!-- Accessory 4 -->
+    <div class="accessory-card">
+  <img src="Images/namco-lightgun.png" alt="Namco-lightgun">
+  <p><strong>Namco Lightgun</strong> Precision aiming device that lets you target on screen with accuracy for shooting games.
+    <a href="https://en.wikipedia.org/wiki/List_of_light-gun_games#PlayStation" target="_blank" class="neon-link">
+      list of lightgun games here</a>.<span class="highlight"><em>$55.99</em></span></p>
+	</div>
+
+    <!-- Accessory 5 -->
+    <div class="accessory-card">
+      <img src="Images/Asciiware-arcadepad.png" alt="Asciiware-arcadepad">
+      <p><strong>Asciiware Arcade Pad</strong> Controller designed for arcade style gameplay with responsive buttons and comfortable grip. <span class="highlight"><em>$24.99</em></span></p>
+    </div>
+
+    <!-- Accessory 6 -->
+    <div class="accessory-card">
+      <img src="Images/madcats-racingwheel.png" alt="madcats-racingwheel">
+      <p><strong>Mad Cats Racing Wheel</strong> Steering wheel controller that brings realistic racing controls to your favorite driving games. <span class="highlight"><em>$36.99</em></span></p>
+    </div>
+
+    <!-- Accessory 7 -->
+    <div class="accessory-card">
+  <img src="Images/Namco-Negcon.png" alt="Namco-Negcon">
+  <p><strong>Namco Negcon</strong> Twisting controller that allows smooth turning and fine control for racing titles. <a href="https://en.wikipedia.org/wiki/NeGcon#Supported_games" target="_blank" class="neon-link"> list of Negcon games here
+    </a>. 
+    <span class="highlight"><em>$38.99</em></span></p>
+	</div>
+
+    <!-- Accessory 8 -->
+    <div class="accessory-card">
+      <img src="Images/Opetc-mach1-flight-pad.png" alt="Opetc-mach1-flight-pad">
+      <p><strong>Opetc Mach 1 Flight Pad</strong> Flight simulation controller that provides precise joystick movements and throttle control. <span class="highlight"><em>$40.99</em></span></p>
+    </div>
+
+    <!-- Accessory 9 -->
+    <div class="accessory-card">
+      <img src="Images/PlayStation-Analog-Joystick.png" alt="PlayStation-Analog-Joystick">
+      <p><strong>PlayStation Analog Joysticks</strong> Set of joysticks that add smooth analog movement for more immersive gameplay experiences. <span class="highlight"><em>$45.99</em></span></p>
+    </div>
+  </div>
+</body>
+
+
+<!-- Footer information with email link with class to make it white instead of dark blue since my bg makes it blend in -->
+<footer>
+  <a href="https://sonyinteractive.com/en/" target="_blank">
+    © 1995 Sony Computer Entertainment Inc.</a>
+  Created by <a href="mailto:olive07@email.franklin.edu" class="mail-link">Derek Olive</a>
+  <a href="sitemap.html">Sitemap</a>
+</footer>

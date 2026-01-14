@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buy It Now – PlayStation 1</title>
+  
+  <!-- Meta Description & Author -->
+  <meta name="description" content="Mock Purchase screen for the PlayStation 1 console, games, and accessories.">
+  <meta name="author" content="Derek Olive">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/ps1-style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Images/ps1-icon.png">
+</head>
+
+<!-- Styling for text and layout structure-->
+  <style>
+    /* Buy Container */
+    .buy-container {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: rgba(0,0,0,0.8);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(0,173,238,0.5);
+      color: white;
+    }
+
+    h2 {
+      text-align: center;
+      color: #00adee;
+      text-shadow: 0 0 8px #00adee;
+      margin-bottom: 15px;
+    }
+
+    /* Name row */
+    .name-row {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .name-field {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: bold;
+      margin-top: 6px;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 8px;
+      border-radius: 6px;
+      border: none;
+      font-size: 0.95em;
+    }
+
+    input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+      outline: 2px solid #00adee;
+      box-shadow: 0 0 8px #00adee;
+    }
+
+    textarea {
+      height: 40px;   /* smaller comments box */
+      resize: none;
+    }
+
+    fieldset {
+      margin-top: 10px;
+      padding: 10px;
+      border: 2px solid #00adee;
+      border-radius: 8px;
+    }
+
+    legend {
+      color: #00adee;
+      font-weight: bold;
+      text-shadow: 0 0 8px #00adee;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+      accent-color: #00adee;
+      margin-right: 6px;
+    }
+
+    .price {
+      color: #d71920;
+      font-size: 0.9em;
+      margin-left: 4px;
+    }
+
+    .total {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #00adee;
+      text-shadow: 0 0 6px #00adee;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #d71920;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 10px 5px 0;
+      box-shadow: 0 0 15px rgba(215,25,32,0.6);
+      transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+    }
+
+    button:hover {
+      background-color: #00adee;
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(0,173,238,0.8);
+    }
+
+    .button-container {
+      text-align: center;
+    }
+
+    .buy-image {
+      text-align: center;
+      margin: 15px 0 0 0;
+    }
+
+    .buy-image img {
+      width: 180px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,173,238,0.5);
+    }
+
+    @media (max-width: 600px) {
+      .buy-container { width: 95%; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="home.html"><img src="Images/ps1-banner.png" alt="PS1 Banner" class="nav-banner"></a>
+    <a href="home.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="games.html">Games</a>
+    <a href="buyitnow.html">Buy It Now</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+  <!-- Buy It Now Form -->
+  <div class="buy-container">
+    <h2>Buy It Now – PlayStation 1</h2>
+    <form method="POST" action="mailto:olive07@email.franklin.edu" enctype="text/plain">
+
+      <!-- First & Last Name Side by Side -->
+      <div class="name-row">
+        <div class="name-field">
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="First Name" required>
+        </div>
+        <div class="name-field">
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="Last Name" required>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="Email" required>
+
+      <!-- Comments -->
+      <label for="comments">Questions, Comments, or Concerns:</label>
+      <textarea id="comments" name="Comments" placeholder="Type your message here..."></textarea>
+
+      <!-- Console Radio Group -->
+      <fieldset>
+        <legend>Purchase Type</legend>
+        <label><input type="radio" name="purchaseType" value="199.00" class="console-option" checked> Console <span class="price">– $199.00</span></label>
+        <label><input type="radio" name="purchaseType" value="0" class="console-option"> Games Only</label>
+        <label><input type="radio" name="purchaseType" value="0" class="console-option"> Accessories Only</label>
+      </fieldset>
+
+      <!-- Games Checkbox Group -->
+	<fieldset>
+		<legend>PlayStation 1 Games</legend>
+		<label><input type="checkbox" class="item" value="29.99"> Crash Bandicoot <span class="price">– $29.99</span></label>
+		<label><input type="checkbox" class="item" value="29.99"> Spyro the Dragon <span class="price">– $29.99</span></label>
+		<label><input type="checkbox" class="item" value="39.99"> Metal Gear Solid <span class="price">– $39.99</span></label>
+		<label><input type="checkbox" class="item" value="24.99"> Tomb Raider <span class="price">– $24.99</span></label>
+		<label><input type="checkbox" class="item" value="39.99"> Crash Team Racing <span class="price">– $39.99</span></label>
+	</fieldset>
+
+      <!-- Accessories Checkbox Group -->
+      <fieldset>
+        <legend>PlayStation 1 Accessories</legend>
+        <label><input type="checkbox" class="item" value="9.99"> Memory Card <span class="price">– $9.99</span></label>
+        <label><input type="checkbox" class="item" value="19.99"> DualShock Controller <span class="price">– $19.99</span></label>
+        <label><input type="checkbox" class="item" value="24.99"> Multitap <span class="price">– $24.99</span></label>
+        <label><input type="checkbox" class="item" value="55.99"> Namco Lightgun <span class="price">– $55.99</span></label>
+        <label><input type="checkbox" class="item" value="24.99"> ASCIIware Arcade Pad <span class="price">– $24.99</span></label>
+        <label><input type="checkbox" class="item" value="36.99"> Mad Catz Racing Wheel <span class="price">– $36.99</span></label>
+        <label><input type="checkbox" class="item" value="38.99"> Namco Negcon <span class="price">– $38.99</span></label>
+        <label><input type="checkbox" class="item" value="40.99"> Optec Mach 1 Flight Pad <span class="price">– $40.99</span></label>
+        <label><input type="checkbox" class="item" value="45.99"> PlayStation Analog Joysticks <span class="price">– $45.99</span></label>
+      </fieldset>
+
+      <!-- Total -->
+      <div class="total">Total: $<span id="totalAmount">199.00</span></div>
+
+      <!-- Buttons -->
+      <div class="button-container">
+        <button type="submit">Submit Form</button>
+        <button type="reset" id="resetBtn">Reset Form</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Boot Screen Image -->
+  <div class="buy-image">
+    <img src="Images/ps1bootscreen.gif" alt="PS1 Boot Screen">
+  </div>
+
+  <!-- Price Calculator Script with help from online resources -->
+  <script>
+    const checkboxes = document.querySelectorAll('.item');
+    const totalDisplay = document.getElementById('totalAmount');
+    const resetBtn = document.getElementById('resetBtn');
+    const consoleOptions = document.querySelectorAll('.console-option');
+
+    function updateTotal() {
+      let total = 0;
+      consoleOptions.forEach(opt => { if (opt.checked) total += parseFloat(opt.value); });
+      checkboxes.forEach(box => { if (box.checked) total += parseFloat(box.value); });
+      totalDisplay.textContent = total.toFixed(2);
+    }
+
+    checkboxes.forEach(box => box.addEventListener('change', updateTotal));
+    consoleOptions.forEach(opt => opt.addEventListener('change', updateTotal));
+    resetBtn.addEventListener('click', () => { totalDisplay.textContent = "199.00"; });
+  </script>
+  
+ <!-- Footer information with email link with class to make it white instead of dark blue since my bg makes it blend in -->
+<footer>
+  <a href="https://sonyinteractive.com/en/" target="_blank">
+    © 1995 Sony Computer Entertainment Inc.</a>
+  Created by <a href="mailto:olive07@email.franklin.edu" class="mail-link">Derek Olive</a>
+  <a href="sitemap.html">Sitemap</a>
+</footer>
+
+
