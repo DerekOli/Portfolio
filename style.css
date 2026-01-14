@@ -1,0 +1,141 @@
+:root {
+    --blue: #1f4fd8;
+    --dark-grey: #2e2e2e;
+    --light-grey: #f4f6f8;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: var(--light-grey);
+    color: var(--dark-grey);
+    line-height: 1.6;
+}
+
+/* NAV BAR */
+nav {
+    background: var(--white);
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--blue);
+}
+
+.nav-links a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: var(--dark-grey);
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: var(--blue);
+}
+
+/* PAGE LAYOUT */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 3rem 1.5rem;
+}
+
+.card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* HEADINGS */
+h1 {
+    margin-top: 0;
+    color: var(--blue);
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+/* EXPERIENCE / EDUCATION */
+.item {
+    margin-bottom: 2rem;
+}
+
+.item h3 {
+    margin: 0;
+}
+
+.item span {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* CERTIFICATES GRID */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.cert-item {
+    text-align: center;
+}
+
+.cert-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cert-item img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+}
+
+.cert-item p {
+    margin-top: 0.75rem;
+    font-weight: 500;
+}
+
+.project-link {
+    color: #1e73be;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+
+
